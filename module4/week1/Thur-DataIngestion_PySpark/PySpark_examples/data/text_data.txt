@@ -1,0 +1,24 @@
+﻿Dữ liệu có cấu trúc
+Dữ liệu có cấu trúc được xem là dữ liệu đơn giản nhất 
+để quản lý và tìm kiếm. Nó là những dữ liệu có thể truy cập, 
+lưu trữ và xử lý ở định dạng cố định. 
+Các thành phần của dữ liệu có cấu trúc được phân loại dễ dàng, 
+cho phép các nhà thiết kế và quản trị viên cơ sở dữ liệu xác định các thuật toán 
+đơn giản để tìm kiếm và phân tích.
+Dữ liệu phi cấu trúc
+Dữ liệu phi cấu trúc là bất kỳ tập hợp dữ liệu nào không được tổ chức 
+hoặc xác định rõ ràng. Loại dữ liệu này hỗn loạn, khó xử lý, khó hiểu và đánh giá.
+Nó không có cấu trúc cố định và có thể thay đổi vào những thời điểm khác nhau. 
+Dữ liệu phi cấu trúc bao gồm các nhận xét, 
+tweet, lượt chia sẻ, bài đăng trên mạng xã hội, 
+video trên YouTube mà người dùng xem,...
+Dữ liệu bán cấu trúc
+Dữ liệu bán cấu trúc là sự kết hợp 
+giữa dữ liệu có cấu trúc và dữ liệu phi cấu trúc. 
+Email là một ví dụ điển hình 
+vì chúng bao gồm dữ liệu phi cấu trúc trong nội dung thư, 
+cũng như nhiều thuộc tính tổ chức khác như 
+người gửi, người nhận, chủ đề và ngày tháng. 
+Các thiết bị sử dụng gắn thẻ địa lý, 
+thời gian cũng có thể cung cấp dữ liệu có cấu trúc 
+bên cạnh nội dung phi cấu trúc.
