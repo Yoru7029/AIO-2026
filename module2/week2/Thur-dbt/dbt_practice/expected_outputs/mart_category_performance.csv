@@ -1,0 +1,7 @@
+product_category_name,order_count,item_count,revenue,freight_value,avg_item_price,pct_of_total_revenue,category_rank
+electronics,5,5,5880.0,225.0,1176.0,52.08,1
+furniture,4,4,2680.0,260.0,670.0,23.74,2
+sports,3,3,980.0,69.0,326.67,8.68,3
+beauty,3,4,800.0,68.0,200.0,7.09,4
+housewares,3,3,520.0,60.0,173.33,4.61,5
+books,4,5,430.0,58.0,86.0,3.81,6

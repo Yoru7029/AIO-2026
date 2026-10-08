@@ -1,0 +1,23 @@
+select
+    order_id,
+    customer_id,
+    customer_unique_id,
+    customer_city,
+    customer_state,
+    order_status,
+    order_purchase_date,
+    order_month,
+    order_delivered_customer_date::date as delivered_date,
+    order_estimated_delivery_date::date as estimated_delivery_date,
+    delivery_days,
+    delay_days,
+    delivery_status,
+    item_count,
+    product_count,
+    order_revenue,
+    freight_value,
+    total_payment_value,
+    main_payment_type,
+    avg_installments,
+    review_score
+from {{ ref('int_orders_enriched') }}

@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: int_order_items_enriched
+    description: Order items enriched with product category and item-level revenue.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: product_category_name
+        tests:
+          - not_null
+
+  - name: int_order_payments
+    description: Payment records aggregated to order grain.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: total_payment_value
+        tests:
+          - not_null
+
+  - name: int_orders_enriched
+    description: Order-level table enriched with customer, payment, review, delivery, and item summaries.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: delivery_status
+        tests:
+          - accepted_values:
+              values: ['On Time', 'Late', 'Not Delivered']

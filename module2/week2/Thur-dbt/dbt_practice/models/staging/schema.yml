@@ -1,0 +1,82 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Cleaned customer table. One row per customer.
+    columns:
+      - name: customer_id
+        description: Primary customer identifier.
+        tests:
+          - unique
+          - not_null
+      - name: customer_state
+        description: Two-letter Brazilian state code.
+        tests:
+          - not_null
+
+  - name: stg_orders
+    description: Cleaned orders table with parsed timestamps and month fields.
+    columns:
+      - name: order_id
+        description: Primary order identifier.
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Customer linked to the order.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: order_status
+        description: Current order status.
+        tests:
+          - accepted_values:
+              values: ['delivered', 'canceled', 'shipped']
+
+  - name: stg_order_items
+    description: Cleaned order item table. One row per item inside an order.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: product_id
+        tests:
+          - not_null
+
+  - name: stg_products
+    description: Product metadata and category table.
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: product_category_name
+        tests:
+          - not_null
+
+  - name: stg_payments
+    description: Payment records attached to orders.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: payment_type
+        tests:
+          - accepted_values:
+              values: ['credit_card', 'boleto', 'voucher', 'debit_card']
+
+  - name: stg_reviews
+    description: Customer review score by order.
+    columns:
+      - name: review_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+      - name: review_score
+        tests:
+          - not_null

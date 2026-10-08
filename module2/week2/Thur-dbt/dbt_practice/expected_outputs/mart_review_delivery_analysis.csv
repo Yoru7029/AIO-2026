@@ -1,0 +1,4 @@
+delivery_status,order_count,avg_review_score,low_review_count,low_review_rate_pct
+On Time,10,4.5,0,0.0
+Not Delivered,2,2.0,1,50.0
+Late,6,1.67,6,100.0

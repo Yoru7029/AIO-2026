@@ -1,0 +1,13 @@
+customer_id,customer_unique_id,customer_city,customer_state
+C001,CU001,sao_paulo,SP
+C002,CU002,rio_de_janeiro,RJ
+C003,CU003,belo_horizonte,MG
+C004,CU004,curitiba,PR
+C005,CU005,salvador,BA
+C006,CU006,campinas,SP
+C007,CU007,niteroi,RJ
+C008,CU008,uberlandia,MG
+C009,CU009,santos,SP
+C010,CU010,porto_alegre,RS
+C011,CU011,recife,PE
+C012,CU012,florianopolis,SC

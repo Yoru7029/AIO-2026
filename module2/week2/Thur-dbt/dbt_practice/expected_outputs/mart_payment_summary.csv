@@ -1,0 +1,5 @@
+payment_type,order_count,payment_record_count,payment_value,avg_installments,pct_of_total_payment,payment_value_rank
+credit_card,13,13,9850.0,3.54,75.46,1
+boleto,3,3,2280.0,1.0,17.47,2
+debit_card,2,2,774.0,1.0,5.93,3
+voucher,2,2,150.0,1.0,1.15,4

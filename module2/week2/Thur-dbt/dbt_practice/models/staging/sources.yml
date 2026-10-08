@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw seed tables for the Olist e-commerce practice case.
+    schema: raw
+    tables:
+      - name: raw_customers
+        description: One row per customer.
+      - name: raw_orders
+        description: One row per order, including purchase and delivery timestamps.
+      - name: raw_order_items
+        description: One row per item inside an order.
+      - name: raw_products
+        description: One row per product and its category.
+      - name: raw_payments
+        description: One row per payment record.
+      - name: raw_reviews
+        description: One row per order review.

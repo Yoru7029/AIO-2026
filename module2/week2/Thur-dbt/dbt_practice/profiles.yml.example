@@ -1,0 +1,12 @@
+sql_transform_practice:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: 'postgres'
+      port: 5432
+      dbname: sql_transform_practice
+      schema: analytics
+      threads: 4
