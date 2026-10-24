@@ -1,0 +1,2 @@
+# Ignore giant data folder that can be downloadable again
+data/
