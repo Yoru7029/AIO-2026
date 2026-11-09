@@ -1,0 +1,29 @@
+# check images
+docker images
+
+# check list of containers 
+# (process status; all)
+docker ps -a
+
+# pull python:3.12
+docker pull python:3.12
+
+# pull python:3.8
+docker pull python:3.8
+
+# create a container (sleep infinity: keep running)
+docker create --name container-python312 python:3.12 sleep infinity
+
+# start a container
+docker start container-python312
+
+# interactive terminal
+docker exec -it container-python312 bash
+docker exec -it container-python312 python
+
+
+
+
+
+
+

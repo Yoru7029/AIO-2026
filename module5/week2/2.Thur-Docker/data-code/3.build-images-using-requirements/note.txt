@@ -1,0 +1,14 @@
+# create Dockerfile and main.py
+docker build -t my-image:v1 .
+
+# run container (keeep running bachground)
+docker run -d --name my-container my-image:v1 sleep infinity
+docker exec -it my-container bash
+
+# run and remove container
+docker run --rm my-image:v1 
+
+
+
+
+

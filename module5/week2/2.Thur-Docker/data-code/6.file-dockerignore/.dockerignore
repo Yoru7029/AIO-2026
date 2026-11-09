@@ -1,0 +1,5 @@
+notebooks/
+temp/
+train.py
+.DS_Store 
+.dockerignore

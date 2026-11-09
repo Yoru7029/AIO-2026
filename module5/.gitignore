@@ -1,2 +1,7 @@
 # Ignore giant data folder that can be downloadable again
 data/
+Data/
+cassavaleafdata/
+
+# Ignore pycache
+__pycache__/
